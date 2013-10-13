@@ -29,10 +29,10 @@ category <- function(x){
 #Import the Typhoon Track Data. Source: RSMC Best Track
 tydat <- read.csv("~/ShinyApps/TyphoonTrack/TyDatLabuyo2013.csv", header = TRUE)
 
-#Transform the Longitude to Unit 0.1
+#Transform the Longitude to 0.1 unit
 tydat$CLongitude <- tydat$CLongitude * 0.1
 
-#Transform the Latitude to Unit 0.1
+#Transform the Latitude to 0.1 unit
 tydat$CLatitude <- tydat$CLatitude * 0.1
 
 #Label the Grade
