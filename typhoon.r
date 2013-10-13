@@ -27,7 +27,7 @@ category <- function(x){
 }
 
 #Import the Typhoon Track Data. Source: RSMC Best Track
-tydat <- read.csv("~/ShinyApps/TyphoonTrack/TyDatNando2013.csv", header = TRUE)
+tydat <- read.csv("~/ShinyApps/TyphoonTrack/TyDatLabuyo2013.csv", header = TRUE)
 
 #Transform the Longitude to Unit 0.1
 tydat$CLongitude <- tydat$CLongitude * 0.1
@@ -89,7 +89,7 @@ p <- autoplot(map) +
                 fontface = "bold"),
             colour = "white",
             size = rel(3.5)) +
-  labs(title = "Severe Tropical Storm | Nando (Kong-rey) | August 25 - August 30, 2013") +
+  labs(title = "Typhoon | Labuyo (Utor) | August 8 - August 18, 2013") +
   xlab(expression(bold("Longitude"))) + 
   ylab(expression(bold("Latitude")))  +
   theme(panel.background = element_rect(
