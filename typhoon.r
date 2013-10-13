@@ -113,5 +113,3 @@ p <- autoplot(map) +
           size=rel(1.2), 
           face="bold")) + 
   coord_fixed()
-p
-
